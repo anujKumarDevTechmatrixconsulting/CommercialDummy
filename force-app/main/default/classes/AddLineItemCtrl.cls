@@ -22,7 +22,7 @@ public with sharing class AddLineItemCtrl {
     */
     @AuraEnabled(cacheable=true)
     public static List<Product2> retriveModelVarient(String name, String modelName){
-        
+        // Push new update
         if(String.isNotBlank(name)){ 
             return AddLineItemCtrlHelper.queryModelVarient(name, modelName); 
         }
